@@ -1,0 +1,40 @@
+{
+  "name": "genkitx-weaviate-examples",
+  "version": "1.0.0",
+  "description": "Examples for genkitx-weaviate plugin",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "genkit:start": "genkit start -- tsx --watch src/index.ts",
+    "start": "node lib/index.js"
+  },
+  "keywords": [
+    "genkit",
+    "weaviate",
+    "examples"
+  ],
+  "author": "Xavier Portilla Edo",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@genkit-ai/express": "^1.26.0",
+    "@genkit-ai/google-genai": "^1.26.0",
+    "dotenv": "^16.4.7",
+    "genkit": "^1.26.0",
+    "genkitx-weaviate": "file:../",
+    "llm-chunk": "^0.0.1",
+    "pdf-parse": "^1.1.4",
+    "weaviate-client": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/pdf-parse": "^1.1.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "genkit-cli": "^1.26.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

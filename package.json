@@ -1,0 +1,80 @@
+{
+  "name": "genkitx-weaviate",
+  "version": "1.0.0",
+  "description": "Weaviate vector database plugin for Firebase Genkit",
+  "type": "commonjs",
+  "main": "lib/cjs/index.js",
+  "module": "./lib/esm/index.mjs",
+  "types": "lib/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/cjs/index.js",
+      "default": "./lib/cjs/index.js",
+      "import": "./lib/esm/index.mjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf ./lib",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json && npm run rename:esm",
+    "rename:esm": "./scripts/fix-mjs.sh",
+    "build": "npm run build:cjs && npm run build:esm",
+    "prepack": "npm run clean && npm run build",
+    "prettier": "prettier 'src/**/*.ts' --write",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "docs": "typedoc ./src/index.ts --out ./docs --tsconfig ./tsconfig.esm.json"
+  },
+  "keywords": [
+    "genkit",
+    "firebase",
+    "genkit-plugin",
+    "weaviate",
+    "vector-database",
+    "embeddings",
+    "retriever",
+    "indexer",
+    "rag",
+    "generative-ai"
+  ],
+  "author": "Xavier Portilla Edo",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xavidop/genkitx-weaviate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xavidop/genkitx-weaviate/issues"
+  },
+  "homepage": "https://github.com/xavidop/genkitx-weaviate#readme",
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
+  "peerDependencies": {
+    "genkit": "^1.26.0"
+  },
+  "dependencies": {
+    "weaviate-client": "^3.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "@types/node": "^24.0.0",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.14.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typedoc": "^0.28.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0",
+    "uuid": "^13.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
