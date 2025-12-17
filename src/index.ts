@@ -73,7 +73,7 @@ export interface WeaviatePluginParams {
 }
 
 /**
- * Weaviate plugin for Firebase Genkit.
+ * Weaviate plugin for Genkit.
  *
  * This plugin provides indexer and retriever functionality for Weaviate vector database.
  * It supports multiple collections, each with their own configuration.

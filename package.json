@@ -1,7 +1,7 @@
 {
   "name": "genkitx-weaviate",
   "version": "1.0.0",
-  "description": "Weaviate vector database plugin for Firebase Genkit",
+  "description": "Weaviate vector database plugin for Genkit",
   "type": "commonjs",
   "main": "lib/cjs/index.js",
   "module": "./lib/esm/index.mjs",

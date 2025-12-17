@@ -1,6 +1,6 @@
 # Examples for genkitx-weaviate
 
-This directory contains example implementations demonstrating how to use the `genkitx-weaviate` plugin with Firebase Genkit.
+This directory contains example implementations demonstrating how to use the `genkitx-weaviate` plugin with Genkit.
 
 ## Prerequisites
 
@@ -208,7 +208,7 @@ If you encounter build errors:
 ## Learn More
 
 - [genkitx-weaviate Documentation](https://github.com/xavidop/genkitx-weaviate)
-- [Firebase Genkit Documentation](https://firebase.google.com/docs/genkit)
+- [Genkit Documentation](https://genkit.dev)
 - [Weaviate Documentation](https://weaviate.io/developers/weaviate)
 - [Weaviate Client Documentation](https://weaviate.io/developers/weaviate/client-libraries/typescript)
 

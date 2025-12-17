@@ -1,8 +1,8 @@
 <h1 align="center">
-   Firebase Genkit <> Weaviate Plugin
+   Genkit <> Weaviate Plugin
 </h1>
 
-<h4 align="center">Weaviate Community Plugin for Google Firebase Genkit</h4>
+<h4 align="center">Weaviate Community Plugin for Google Genkit</h4>
 
 <div align="center">
    <img alt="GitHub version" src="https://img.shields.io/github/v/release/xavidop/genkitx-weaviate">
@@ -20,7 +20,7 @@
 </br>
 
 **`genkitx-weaviate`** is a community plugin for using [Weaviate](https://weaviate.io/) vector database with
-[Firebase Genkit](https://github.com/firebase/genkit). Built by [**Xavier Portilla Edo**](https://github.com/xavidop).
+[Genkit](https://github.com/firebase/genkit). Built by [**Xavier Portilla Edo**](https://github.com/xavidop).
 
 ## Table of Contents
 
@@ -129,7 +129,7 @@ const documents = [
     metadata: { source: 'docs' }
   },
   { 
-    text: 'Firebase Genkit is an AI framework',
+    text: 'Genkit is an AI framework',
     metadata: { source: 'docs' }
   },
 ];
@@ -218,7 +218,7 @@ You can find more examples in the [examples](./examples/) folder.
 
 ## Features
 
-- **Easy Integration**: Simple setup with Firebase Genkit
+- **Easy Integration**: Simple setup with Genkit
 - **Multiple Collections**: Support for multiple Weaviate collections
 - **Flexible Configuration**: Customizable collection settings
 - **Type Safety**: Full TypeScript support
@@ -247,7 +247,7 @@ Want to contribute to the project? That's awesome! Head over to our [Contributio
 ## Need Support?
 
 > [!NOTE]  
-> This repository depends on Google's Firebase Genkit. For issues and questions related to Genkit, please refer to instructions available in [Genkit's repository](https://github.com/firebase/genkit).
+> This repository depends on Google's Genkit. For issues and questions related to Genkit, please refer to instructions available in [Genkit's repository](https://github.com/firebase/genkit).
 
 Reach out by opening a discussion on [GitHub Discussions](https://github.com/xavidop/genkitx-weaviate/discussions).
 
