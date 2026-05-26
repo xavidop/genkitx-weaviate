@@ -16,7 +16,6 @@
    <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr/xavidop/genkitx-weaviate?color=blue">
    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/xavidop/genkitx-weaviate">
 </div>
-
 </br>
 
 **`genkitx-weaviate`** is a community plugin for using [Weaviate](https://weaviate.io/) vector database with
